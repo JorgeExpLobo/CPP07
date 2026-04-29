@@ -10,10 +10,10 @@ int main() {
     std::cout << "a = " << a << std::endl;
     std::cout << "b = " << b << std::endl;
 
-    std::cout << "min = " << min<int>(a, b) << std::endl;
-    std::cout << "max = " << max<int>(a, b) << std::endl;
+    std::cout << "min = " << min(a, b) << std::endl;
+    std::cout << "max = " << max(a, b) << std::endl;
 
-    swap<int>(*a_ptr, *b_ptr);
+    swap(*a_ptr, *b_ptr);
     std::cout << "          --SWAPPING INTEGERS--" << std::endl;
     std::cout << "a = " << a << std::endl;
     std::cout << "b = " << b << std::endl;
@@ -26,10 +26,10 @@ int main() {
     std::cout << "c = " << c << std::endl;
     std::cout << "d = " << d << std::endl;
 
-    std::cout << "min = " << min<char>(c, d) << std::endl;
-    std::cout << "max = " << max<char>(c, d) << std::endl;
+    std::cout << "min = " << min(c, d) << std::endl;
+    std::cout << "max = " << max(c, d) << std::endl;
 
-    swap<char>(*c_ptr, *d_ptr);
+    swap(*c_ptr, *d_ptr);
     std::cout << "          --SWAPPING CHARS--" << std::endl;
     std::cout << "c = " << c << std::endl;
     std::cout << "d = " << d << std::endl;

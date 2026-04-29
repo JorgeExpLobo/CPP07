@@ -1,17 +1,17 @@
 #pragma once
 
 template <typename T>
-T min(T param1, T param2) {
+const T& min(const T& param1, const T& param2) {
     return param1 < param2 ? param1 : param2;
 }
 
 template <typename T>
-T max(T param1, T param2) {
+const T& max(const T& param1, const T& param2) {
     return param1 > param2 ? param1 : param2;
 }
 
 template <typename T>
-void swap(T &param1, T &param2) {
+void swap(T& param1, T& param2) {
     T temp = param1;
     param1 = param2;
     param2 = temp;
