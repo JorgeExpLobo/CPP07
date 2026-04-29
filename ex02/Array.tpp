@@ -29,14 +29,14 @@ Array<T>::~Array() {
 
 template <typename T>
 T& Array<T>::operator[](std::size_t index) {
-    if (index >= _size || index < 0)
+    if (index >= _size)
         throw std::out_of_range("Index out of bounds");
     return _data[index];
 }
 
 template <typename T>
 const T& Array<T>::operator[](std::size_t index) const {
-    if (index >= _size || index < 0)
+    if (index >= _size)
         throw std::out_of_range("Index out of bounds");
     return _data[index];
 }
